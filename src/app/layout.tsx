@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <div className="mx-auto max-w-[1440px] px-4">
+        <div className="mx-auto max-w-screen-xl px-4">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
