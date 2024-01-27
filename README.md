@@ -1,4 +1,4 @@
-Kayinc is a company which based on selling cereals 
+Kayinc is a company which based on selling  crops
 
 I created this project to improve my typescript skills and 
 uses od contentsfull cnms form management of contents  
