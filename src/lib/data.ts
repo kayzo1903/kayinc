@@ -9,30 +9,25 @@ export const navLinks: NavLinks[] = [
     id: "01",
     link: "/",
     path: "Home",
-  },
+  } ,
   {
     id: "02",
-    link: "/",
-    path: "why us",
+    link: "/About",
+    path: "Why us",
   },
   {
     id: "03",
-    link: "/about",
-    path: "about",
+    link: "/Product",
+    path: "Products",
   },
   {
     id: "04",
-    link: "/Products",
-    path: "products",
-  },
-  {
-    id: "05",
     link: "/Blog",
     path: "Blog",
   },
   {
-    id: "06",
-    link: "/contact",
+    id: "05",
+    link: "/Contacts",
     path: "Contacts",
   },
 ];
@@ -68,14 +63,13 @@ const cropsList: CropsProduct[] = [
     title: "Neptune",
     price: 12.0,
   },
-  ,
   {
     id: 4,
     imageSrc: require('../../public/maize.jpg'),
     category: "CATEGORY",
     title: "Neptune",
     price: 12.0,
-  },
+  }
   ,
   {
     id: 5,

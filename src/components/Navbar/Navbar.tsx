@@ -4,10 +4,18 @@ import { QueList } from '../Icons/Icons'
 import ThemeSwitch from '../ui/Darkmode-toogle'
 import Link from 'next/link'
 import { FaTimes } from 'react-icons/fa'
+import { usePathname } from 'next/navigation'
+import { NavLinks, navLinks } from '@/lib/data'
+
+interface NavLinksProps {
+    navLinks: NavLinks[]
+}
 
 
-const Navbar = () => {
+const Navbar: React.FC<NavLinksProps> = () => {
     const [isNavOpen, setNavOpen] = useState(false)
+    const pathname = usePathname()
+
 
     return (
         <header className='flex gap-2 justify-between px-4 pt-4 items-center h-14 bg-black bg-opacity-10 py-4 '>
@@ -15,11 +23,12 @@ const Navbar = () => {
                 kayInc
             </span>
             <nav className='hidden md:block font-semibold text-white space-x-4'>
-                <Link href={'/'} className='text-base hover:text-skin'>Home</Link>
-                <Link href={'/About'} className='text-base hover:text-skin'>Why us</Link>
-                <Link href={'/Product'} className='text-base hover:text-skin'>Product</Link>
-                <Link href={'/Blog'} className='text-base hover:text-skin'>NewsFeed</Link>
-                <Link href={'/Contacts'} className='text-base hover:text-skin'>Contact</Link>
+                {navLinks.map((item) => {
+                    const { id, link, path } = item
+                    return (
+                        <Link href={link} className={`${pathname === link ? "text-skin" : "text-white"} hover:text-skin text-base`} key={id}>{path}</Link>
+                    )
+                })}
             </nav>
             <div className='flex gap-4 items-center '>
                 <ThemeSwitch />
@@ -35,11 +44,12 @@ const Navbar = () => {
                         <FaTimes className='h-10 w-10 hover:text-skin' />
                     </button>
                     <nav className='px-4 py-8 flex flex-col gap-4'>
-                        <Link href={'/'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Home</Link>
-                        <Link href={'/About'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Why us</Link>
-                        <Link href={'/Product'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Product</Link>
-                        <Link href={'/Blog'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>News feeds</Link>
-                        <Link href={'/Contacts'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Contact</Link>
+                        {navLinks.map((item) => {
+                            const { id, link, path } = item
+                            return (
+                                <Link href={link} onClick={() => setNavOpen(false)} className={`${pathname === link ? "text-skin" : "text-white"} hover:text-skin text-2xl`} key={id}>{path}</Link>
+                            )
+                        })}
                     </nav>
                 </div>
             </div>
