@@ -15,8 +15,6 @@ export default function Home() {
          <Commitment />
          <Product />
          <Testimonials/>
-         <CallToAction />
-         <Footer />
      </main>
   );
 }

@@ -10,7 +10,7 @@ const Navbar = () => {
     const [isNavOpen, setNavOpen] = useState(false)
 
     return (
-        <header className='flex gap-2 justify-between px-4 pt-4 items-center h-14 relative'>
+        <header className='flex gap-2 justify-between px-4 pt-4 items-center h-14'>
             <nav className='hidden md:block font-extralight space-x-4'>
                     <Link href={'/'} className='text-base hover:text-skin'>Home</Link>
                     <Link href={'/'} className='text-base hover:text-skin'>About</Link>

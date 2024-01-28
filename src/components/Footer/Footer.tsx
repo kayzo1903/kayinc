@@ -7,11 +7,11 @@ const Footer = () => {
     const year = new Date().getFullYear()
     return (
         <footer className='w-full mt-16 pb-4 px-4 h-fit space-y-4'>
-            <div className='flex gap-4 items-start justify-center flex-wrap py-8'>
-                <div className='w-52 py-2'>
+            <div className='flex gap-4 items-start justify-start sm:justify-center flex-wrap py-8'>
+                <div className='w-40 py-2'>
                     <h3 className='text-3xl sm:text-4xl font-semibold text-gray-950 dark:text-white'>kayInc</h3>
                 </div>
-                <div className='space-y-2 w-52 py-2'>
+                <div className='space-y-2 w-40 py-2'>
                     <h6 className='text-xl text-skin'>Learn</h6>
                     <div className='flex flex-col gap-2 text-gray-400'>
                         <Link href={'/Company'}>Company</Link>
@@ -19,7 +19,7 @@ const Footer = () => {
                         <Link href={'/Whyus'}>Why us</Link>
                     </div>
                 </div>
-                <div className='space-y-2 w-52 py-2'>
+                <div className='space-y-2 w-40 py-2'>
                     <h6 className='text-xl text-skin'>Explore</h6>
                     <div className='flex flex-col gap-2 text-gray-400'>
                         <Link href={'/Prducts'}>Products</Link>
@@ -27,7 +27,7 @@ const Footer = () => {
                         <Link href={'/Review'}>Review</Link>
                     </div>
                 </div>
-                <div className='space-y-2 w-52 py-2'>
+                <div className='space-y-2 w-40 py-2'>
                     <h6 className='text-xl text-skin'>Collaborate</h6>
                     <div className='flex flex-col gap-2 text-gray-400'>
                         <Link href={'/Contact'}>Contacts</Link>
@@ -35,7 +35,7 @@ const Footer = () => {
                         <Link href={'/Team'}>Our Team</Link>
                     </div>
                 </div>
-                <div className='space-y-2 w-52 py-2'>
+                <div className='space-y-2 w-40 py-2'>
                     <h6 className='text-xl text-skin'>Connect</h6>
                     <div className='flex flex-col gap-2 text-gray-400'>
                         <span>Uhuru Street</span>

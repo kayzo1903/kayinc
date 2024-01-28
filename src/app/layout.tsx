@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../components/ui/theme-provider";
-
+import CallToAction from "@/components/CTA/CTA";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <div className="mx-auto max-w-screen-xl px-4">
+        <div className="mx-auto max-w-screen-xl relative">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -27,6 +28,8 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
+            <CallToAction />
+            <Footer />
           </ThemeProvider>
         </div>
       </body>

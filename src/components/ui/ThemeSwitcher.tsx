@@ -1,4 +1,6 @@
 'use client'
+
+// Import necessary types
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Moon, Sun } from '../Icons/Icons'
@@ -21,9 +23,9 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = () => {
     }
 
     return (
-        <div className='h-8 w-8 bg-white dark:bg-slate-400 flex justify-center items-center rounded-full'>
+        <div>
             {
-                resolvedTheme === 'light' ? (
+                resolvedTheme === 'dark' ? (
                     <button onClick={() => setTheme('dark')}><Sun /></button>
                 ) : (
                     <button onClick={() => setTheme('light')}><Moon /></button>
