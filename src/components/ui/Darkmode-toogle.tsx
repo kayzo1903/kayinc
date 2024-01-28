@@ -21,7 +21,7 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = () => {
     }
 
     return (
-        <div className='h-8 w-8 bg-white dark:bg-slate-400 flex justify-center items-center rounded-full'>
+        <div className='h-8 w-8 bg-transparent flex justify-center items-center rounded-full'>
             {
                 resolvedTheme === 'light' ? (
                     <button onClick={() => setTheme('dark')}><Sun /></button>

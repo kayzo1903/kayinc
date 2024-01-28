@@ -68,6 +68,22 @@ const cropsList: CropsProduct[] = [
     title: "Neptune",
     price: 12.0,
   },
+  ,
+  {
+    id: 4,
+    imageSrc: require('../../public/maize.jpg'),
+    category: "CATEGORY",
+    title: "Neptune",
+    price: 12.0,
+  },
+  ,
+  {
+    id: 5,
+    imageSrc: require('../../public/maize.jpg'),
+    category: "CATEGORY",
+    title: "Neptune",
+    price: 12.0,
+  }
 ];
 
 export default cropsList;

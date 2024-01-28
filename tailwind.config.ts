@@ -75,7 +75,11 @@ const config = {
       },
       backgroundImage :{
         "heroimage" : "url('../../public/maize.jpg')" ,
-        "ctaimage" : "url('../../public/CTA.png')"
+        "ctaimage" : "url('../../public/CTA.png')" ,
+        "abouthero" : "url('../../public/wheat.jpg')",
+        "producthero" : "url('../../public/fullmaize.jpg')",
+        "newsfeed" : "url('../../public/tealeaves.jpg')",
+        "contacts" : "url('../../public/maizeplantation.jpg')",
        }
     },
   },

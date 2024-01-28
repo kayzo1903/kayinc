@@ -10,18 +10,17 @@ const Navbar = () => {
     const [isNavOpen, setNavOpen] = useState(false)
 
     return (
-        <header className='flex gap-2 justify-between px-4 pt-4 items-center h-14'>
-            <nav className='hidden md:block font-extralight space-x-4'>
-                    <Link href={'/'} className='text-base hover:text-skin'>Home</Link>
-                    <Link href={'/'} className='text-base hover:text-skin'>About</Link>
-                    <Link href={'/'} className='text-base hover:text-skin'>Why us</Link>
-                    <Link href={'/'} className='text-base hover:text-skin'>Product</Link>
-                    <Link href={'/'} className='text-base hover:text-skin'>NewsFeed</Link>
-                    <Link href={'/'} className='text-base hover:text-skin'>Contact</Link>
-            </nav>
+        <header className='flex gap-2 justify-between px-4 pt-4 items-center h-14 bg-black bg-opacity-10 py-4 '>
             <span className='text-2xl font-semibold'>
                 kayInc
             </span>
+            <nav className='hidden md:block font-semibold text-white space-x-4'>
+                <Link href={'/'} className='text-base hover:text-skin'>Home</Link>
+                <Link href={'/About'} className='text-base hover:text-skin'>Why us</Link>
+                <Link href={'/Product'} className='text-base hover:text-skin'>Product</Link>
+                <Link href={'/Blog'} className='text-base hover:text-skin'>NewsFeed</Link>
+                <Link href={'/Contacts'} className='text-base hover:text-skin'>Contact</Link>
+            </nav>
             <div className='flex gap-4 items-center '>
                 <ThemeSwitch />
                 <button onClick={() => setNavOpen((prev) => !prev)} className='md:hidden'>
@@ -37,11 +36,10 @@ const Navbar = () => {
                     </button>
                     <nav className='px-4 py-8 flex flex-col gap-4'>
                         <Link href={'/'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Home</Link>
-                        <Link href={'/'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>About</Link>
-                        <Link href={'/'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Why us</Link>
-                        <Link href={'/'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Product</Link>
-                        <Link href={'/'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>News feeds</Link>
-                        <Link href={'/'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Contact</Link>
+                        <Link href={'/About'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Why us</Link>
+                        <Link href={'/Product'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Product</Link>
+                        <Link href={'/Blog'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>News feeds</Link>
+                        <Link href={'/Contacts'} onClick={() => setNavOpen(false)} className='text-2xl hover:text-skin'>Contact</Link>
                     </nav>
                 </div>
             </div>
