@@ -15,8 +15,7 @@ export function AccordionDemo() {
                     <AccordionContent>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa
                         dignissimos excepturi voluptate vitae consequatur dolorem qui sed, voluptas
-                        natus voluptatibus
-                        quia eveniet enim voluptates aspernatur voluptatum soluta nam consectetur?
+                        natus voluptatibus quia eveniet enim voluptates aspernatur voluptatum soluta nam consectetur
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
