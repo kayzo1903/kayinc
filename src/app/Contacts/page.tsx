@@ -1,6 +1,8 @@
+import { AccordionDemo } from "@/components/Accordion/Accordion";
 import OurAddress from "@/components/Contacts-Adress/Contacts-address";
 import EnguiryForm from "@/components/Contacts-Adress/EnguiryForm";
 import Herosection from "@/components/Herosection/contacts-Herosection";
+import { Accordion } from "@/components/ui/accordion";
 
 export default function ContactPage() {
     return (
@@ -8,6 +10,7 @@ export default function ContactPage() {
            <Herosection />
            <OurAddress />
            <EnguiryForm />
+           <AccordionDemo />
         </section>
     )
 }
