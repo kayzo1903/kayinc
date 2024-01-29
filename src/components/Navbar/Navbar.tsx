@@ -38,7 +38,7 @@ const Navbar: React.FC<NavLinksProps> = () => {
             </div>
 
             {/* side navbar */}
-            <div className={`md:hidden w-full h-screen text-gray-950 dark:text-white bg-white dark:bg-gray-950 absolute ${isNavOpen ? "left-0" : "-left-[100%]"} top-0 z-10`}>
+            <div className={`md:hidden w-full h-screen text-gray-950 dark:text-white bg-white dark:bg-gray-950 absolute ${isNavOpen ? "left-0" : "-left-[100%]"} top-0 z-20`}>
                 <div className='w-full relative flex justify-center items-center mt-8'>
                     <button className='absolute top-4 right-4' onClick={() => setNavOpen(false)}>
                         <FaTimes className='h-10 w-10 hover:text-skin' />
@@ -47,7 +47,7 @@ const Navbar: React.FC<NavLinksProps> = () => {
                         {navLinks.map((item) => {
                             const { id, link, path } = item
                             return (
-                                <Link href={link} onClick={() => setNavOpen(false)} className={`${pathname === link ? "text-skin" : "text-white"} hover:text-skin text-2xl`} key={id}>{path}</Link>
+                                <Link href={link} onClick={() => setNavOpen(false)} className={`${pathname === link ? "text-skin" : "text-gray-950 dark:text-white"} hover:text-skin text-2xl`} key={id}>{path}</Link>
                             )
                         })}
                     </nav>

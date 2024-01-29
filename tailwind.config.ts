@@ -78,7 +78,7 @@ const config = {
         "ctaimage" : "url('../../public/CTA.png')" ,
         "abouthero" : "url('../../public/wheat.jpg')",
         "producthero" : "url('../../public/fullmaize.jpg')",
-        "newsfeed" : "url('../../public/tealeaves.jpg')",
+        "newsfeed" : "url('../../public/maizefarm.jpg')",
         "contacts" : "url('../../public/maizeplantation.jpg')",
        }
     },
