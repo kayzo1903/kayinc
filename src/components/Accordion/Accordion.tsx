@@ -23,8 +23,7 @@ export function AccordionDemo() {
                     <AccordionTrigger>Are your company only deals with crops</AccordionTrigger>
                     <AccordionContent>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa
-                        dignissimos excepturi voluptate vitae consequatur dolorem qui sed, voluptas
-                        natus voluptatibus
+                        dignissimos excepturi voluptate vitae consequatur dolorem qui sed, voluptas natus voluptatibus
                         quia eveniet enim voluptates aspernatur voluptatum soluta nam consectetur?
                     </AccordionContent>
                 </AccordionItem>
