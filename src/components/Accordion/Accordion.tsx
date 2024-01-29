@@ -23,7 +23,7 @@ export function AccordionDemo() {
                     <AccordionContent>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa
                         dignissimos excepturi voluptate vitae consequatur dolorem qui sed, voluptas natus voluptatibus
-                        quia eveniet enim voluptates aspernatur voluptatum soluta nam consectetur?
+                        quia eveniet enim voluptates aspernatur voluptatum soluta nam consectetur
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
@@ -32,7 +32,7 @@ export function AccordionDemo() {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa
                         dignissimos excepturi voluptate vitae consequatur dolorem qui sed, voluptas
                         natus voluptatibus
-                        quia eveniet enim voluptates aspernatur voluptatum soluta nam consectetur?
+                        quia eveniet enim voluptates aspernatur voluptatum soluta nam consectetur
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
@@ -41,7 +41,7 @@ export function AccordionDemo() {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa
                         dignissimos excepturi voluptate vitae consequatur dolorem qui sed, voluptas
                         natus voluptatibus
-                        quia eveniet enim voluptates aspernatur voluptatum soluta nam consectetur?
+                        quia eveniet enim voluptates aspernatur voluptatum soluta nam consectetur
                     </AccordionContent>
                 </AccordionItem>
             </Accordion>
