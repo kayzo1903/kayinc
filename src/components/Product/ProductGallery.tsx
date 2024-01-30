@@ -1,12 +1,22 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useRef } from 'react'
 import cropsList from '@/lib/data'
 import ProductGaleryCards from './ProductGalleryCards'
-import { BiChevronLeft, BiChevronRight, BiFilter, BiSearch } from 'react-icons/bi';
+import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 import { Filter } from '../Icons/Icons';
 
 const ProductGalery: React.FC = () => {
+
+const scrollintoRef = useRef<HTMLDivElement>(null) 
+
+useEffect(()=>{
+if (scrollintoRef.current) {
+    scrollintoRef.current.scrollIntoView({behavior : 'smooth'})
+}
+}, [])
+
     return (
-        <section className='w-full px-4 min-h-screen  text-gray-900 dark:text-white space-y-8 py-8'>
+        <section className='w-full px-4 min-h-screen  text-gray-900 dark:text-white space-y-8 py-8' ref={scrollintoRef}>
             <div className='sm:mx-auto mt-8' >
                 <h3 className='text-2xl font-semibold sm:text-3xl text-center'>fresh organic supply direct </h3>
                 <h3 className='text-2xl font-semibold sm:text-3xl text-center'>from the farmer to home</h3>

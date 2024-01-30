@@ -5,7 +5,7 @@ import { DoubleChevronRight } from '../Icons/Icons'
 const LatestPost = () => {
   return (
     <article className='w-full px-4 py-8 min-h-[50vh] space-y-8'>
-      <h3 className='text-xl text-gray-800 dark:text-slate-300 leading-relaxed'>popular post</h3>
+      <h3 className='text-xl text-gray-800 dark:text-slate-300 leading-relaxed'>latest post</h3>
       <div className='flex flex-wrap gap-4 justify-center items-center'>
         <PostCards />
         <PostCards />

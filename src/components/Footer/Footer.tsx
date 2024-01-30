@@ -16,13 +16,13 @@ const Footer = () => {
                     <div className='flex flex-col gap-2 text-gray-400'>
                         <Link href={'/Company'}>Company</Link>
                         <Link href={'/Responsibility'}>Responsibility</Link>
-                        <Link href={'/Whyus'}>Why us</Link>
+                        <Link href={'/About'}>Why us</Link>
                     </div>
                 </div>
                 <div className='space-y-2 w-40 py-2'>
                     <h6 className='text-xl text-skin'>Explore</h6>
                     <div className='flex flex-col gap-2 text-gray-400'>
-                        <Link href={'/Prducts'}>Products</Link>
+                        <Link href={'/Prduct'}>Products</Link>
                         <Link href={'/Blog'}>Blog</Link>
                         <Link href={'/Review'}>Review</Link>
                     </div>
@@ -30,7 +30,7 @@ const Footer = () => {
                 <div className='space-y-2 w-40 py-2'>
                     <h6 className='text-xl text-skin'>Collaborate</h6>
                     <div className='flex flex-col gap-2 text-gray-400'>
-                        <Link href={'/Contact'}>Contacts</Link>
+                        <Link href={'/Contacts'}>Contacts</Link>
                         <Link href={'/Supplier'}>Become supplier</Link>
                         <Link href={'/Team'}>Our Team</Link>
                     </div>

@@ -8,7 +8,7 @@ const Product: React.FC = () => {
   const firstThreeItems = cropsList.slice(0, 3);
 
   return (
-    <section className='w-full px-4 !h-fit  text-gray-900 dark:text-white space-y-8 py-8'>
+    <section className='w-full px-4 !h-fit  text-gray-900 dark:text-white space-y-8 pt-8'>
       <div className='sm:mx-auto mt-8'>
         <h3 className='text-2xl font-semibold sm:text-3xl text-center'>fresh organic supply direct </h3>
         <h3 className='text-2xl font-semibold sm:text-3xl text-center'>from the farmer to home</h3>

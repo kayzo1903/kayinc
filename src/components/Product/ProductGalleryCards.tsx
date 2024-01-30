@@ -13,7 +13,7 @@ const ProductGaleryCards: React.FC<ProductCardProps> = ({ product }) => {
   const { imageSrc, category, title, price } = product;
 
   return (
-    <Link href={'/Product/2345'} className="max-w-96 sm:max-w-[235px] h-96 bg-gray-100 dark:bg-gray-800  shadow-md rounded-lg w-full space-y-4">
+    <Link href={'/Product/2345'} className="max-w-96 sm:max-w-[220px] h-96 bg-gray-100 dark:bg-gray-800  shadow-md rounded-lg w-full space-y-4">
       <div className="block relative w-full h-72 overflow-hidden rounded-t-md ">
            <Image
             alt='crops'

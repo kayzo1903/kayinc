@@ -15,7 +15,7 @@ const BlogPostPage = () => {
                     fill={true}
                     priority
                     style={{ objectFit: "cover", zIndex: "-10" }} />
-                <div className='absolute space-y-2 -bottom-10 z-10 left-4 px-4 py-4 rounded w-[95%] h-fit bg-slate-300 dark:bg-gray-900'>
+                <div className='absolute space-y-2 -bottom-10 z-10 left-4 px-4 py-4 rounded w-[95%] h-fit bg-white shadow-lg dark:bg-gray-900'>
                     <h3 className='text-xl'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Nobis consectetur ratione inventore incidunt suscipit distinctio</h3>
                     <div className='w-full h-12 py-2 flex items-center gap-2 flex-nowrap'>
