@@ -19,9 +19,9 @@ const Navbar: React.FC<NavLinksProps> = () => {
 
     return (
         <header className='flex gap-2 justify-between px-4 pt-4 items-center h-14 bg-black bg-opacity-10 py-4 '>
-            <span className='text-2xl font-semibold'>
+            <Link href={'/'} className='text-2xl font-semibold'>
                 kayInc
-            </span>
+            </Link>
             <nav className='hidden md:block font-semibold text-white space-x-4'>
                 {navLinks.map((item) => {
                     const { id, link, path } = item
