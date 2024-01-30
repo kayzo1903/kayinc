@@ -1,9 +1,8 @@
 import React from 'react'
 import cropsList from '@/lib/data'
 import ProductGaleryCards from './ProductGalleryCards'
-import { Pagination } from "@nextui-org/react";
 import { BiChevronLeft, BiChevronRight, BiFilter, BiSearch } from 'react-icons/bi';
-import { Filter, Search } from '../Icons/Icons';
+import { Filter } from '../Icons/Icons';
 
 const ProductGalery: React.FC = () => {
     return (

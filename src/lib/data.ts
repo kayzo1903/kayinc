@@ -44,28 +44,28 @@ export interface CropsProduct {
 const cropsList: CropsProduct[] = [
   {
     id: 1,
-    imageSrc: require('../../public/maize.jpg'),
+    imageSrc: require('../../public/beans.jpg'),
     category: "CATEGORY",
     title: "The Catalyzer",
     price: 16.0,
   },
   {
     id: 2,
-    imageSrc: require('../../public/maize.jpg'),
+    imageSrc: require('../../public/beans.jpg'),
     category: "CATEGORY",
     title: "Shooting Stars",
     price: 21.15,
   },
   {
     id: 3,
-    imageSrc: require('../../public/maize.jpg'),
+    imageSrc: require('../../public/beans.jpg'),
     category: "CATEGORY",
     title: "Neptune",
     price: 12.0,
   },
   {
     id: 4,
-    imageSrc: require('../../public/maize.jpg'),
+    imageSrc: require('../../public/beans.jpg'),
     category: "CATEGORY",
     title: "Neptune",
     price: 12.0,
@@ -73,7 +73,7 @@ const cropsList: CropsProduct[] = [
   ,
   {
     id: 5,
-    imageSrc: require('../../public/maize.jpg'),
+    imageSrc: require('../../public/beans.jpg'),
     category: "CATEGORY",
     title: "Neptune",
     price: 12.0,

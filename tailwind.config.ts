@@ -80,6 +80,7 @@ const config = {
         "producthero" : "url('../../public/fullmaize.jpg')",
         "newsfeed" : "url('../../public/maizefarm.jpg')",
         "contacts" : "url('../../public/maizeplantation.jpg')",
+        "product" : "url('../../public/carrot.jpg')",
        }
     },
   },

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const EnguiryForm = () => {
     return (
-        <form className='py-8 w-full flex gap-4 items-center bg-skin px-4'>
+        <form className='py-8 w-full flex gap-4 items-center !h-fit bg-skin px-4'>
             <div className='hidden sm:block h-[480px] w-96 relative'>
                 <Image
                     alt='garden'
@@ -13,7 +13,7 @@ const EnguiryForm = () => {
                     fill={true}
                     style={{ objectFit: "cover" }} />
             </div>
-            <div className='h-[480px] max-w-[96] py-12 px-4 sm:px-32 relative'>
+            <div className='h-[480px] max-w-[96] py-12 px-4 sm:px-32'>
                 <div className='w-full'>
                     <div className='text-white capitalize'>
                         <h3 className='text-2xl font-semibold leading-relaxed'>General enguiries form</h3>
