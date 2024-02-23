@@ -5,14 +5,10 @@ import ThemeSwitch from '../ui/Darkmode-toogle'
 import Link from 'next/link'
 import { FaTimes } from 'react-icons/fa'
 import { usePathname } from 'next/navigation'
-import { NavLinks, navLinks } from '@/lib/data'
-
-interface NavLinksProps {
-    navLinks: NavLinks[]
-}
+import { navLinks } from '@/lib/data'
 
 
-const Navbar: React.FC<NavLinksProps> = () => {
+const Navbar = () => {
     const [isNavOpen, setNavOpen] = useState(false)
     const pathname = usePathname()
 
